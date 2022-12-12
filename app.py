@@ -31,9 +31,9 @@ with st.sidebar:
 
 if choice == "Exploratory Data Analysis": 
   st.title("Exploratory Data Analysis")
-  #st.dataframe(df)
-  #profile_df = df.profile_report()
-  #st_profile_report(profile_df)
+  st.dataframe(df)
+  profile_df = df.profile_report()
+  st_profile_report(profile_df)
 
 if choice == "Model":
   cat_cols = ["origin_area", "origin_sector", "dest_area","dest_sector","sales_channel","route_type","no_of_hub_movement","sla_days"]
